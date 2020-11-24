@@ -953,7 +953,9 @@ var render = function() {
                         )
                       ]),
                       _vm._v(" "),
-                      _c("button", [_vm._v("Learn more")])
+                      _c("button", { staticClass: "black-btn" }, [
+                        _vm._v("View ranges")
+                      ])
                     ]
                   )
                 ])
@@ -980,7 +982,7 @@ var render = function() {
                 [
                   _c("img", {
                     attrs: {
-                      src: "/images/single-oven.jpg",
+                      src: "public/images/single-oven.jpg",
                       width: "100%",
                       height: "auto"
                     }
@@ -1114,18 +1116,20 @@ var render = function() {
                 _vm._m(6)
               ]),
               _vm._v(" "),
-              _c("form", { staticClass: "form-inline my-2 my-lg-0" }, [
+              _c("div", { staticClass: "form-inline my-2 my-lg-0" }, [
                 _c("img", {
                   staticClass: "cursor-pointer",
                   attrs: {
-                    src: "/images/search-icon.svg",
+                    src: "public/images/search-icon.svg",
                     width: "auto",
                     height: "15"
                   },
                   on: { click: _vm.toggleSearchForm }
                 }),
                 _vm._v(" "),
-                _c("button", { staticClass: "btn" }, [_vm._v("LOG IN")])
+                _c("button", { staticClass: "btn white-btn" }, [
+                  _vm._v("LOG IN")
+                ])
               ]),
               _vm._v(" "),
               _c(
@@ -1163,7 +1167,7 @@ var render = function() {
                           ),
                           _c("img", {
                             attrs: {
-                              src: "/images/form-dropdown-arrow.svg",
+                              src: "public/images/form-dropdown-arrow.svg",
                               width: "auto",
                               height: "4"
                             }
@@ -1298,14 +1302,14 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "col-span-2 flex" }, [
-                      _c("button", { staticClass: "search-btn" }, [
+                      _c("button", { staticClass: "search-btn black-btn" }, [
                         _vm._v("\n                Search\n              ")
                       ]),
                       _vm._v(" "),
                       _c("img", {
                         staticClass: "close",
                         attrs: {
-                          src: "/images/close-search.svg",
+                          src: "public/images/close-search.svg",
                           width: "auto",
                           height: "15"
                         },
@@ -1356,7 +1360,7 @@ var render = function() {
                     _vm._v("Products "),
                     _c("img", {
                       attrs: {
-                        src: "/images/menu-arrow.svg",
+                        src: "public/images/menu-arrow.svg",
                         width: "auto",
                         height: "10"
                       }
@@ -1370,7 +1374,7 @@ var render = function() {
                   _vm._v("Service "),
                   _c("img", {
                     attrs: {
-                      src: "/images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1383,7 +1387,7 @@ var render = function() {
                   _vm._v("Retailers "),
                   _c("img", {
                     attrs: {
-                      src: "/images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1396,7 +1400,7 @@ var render = function() {
                   _vm._v("Our Story "),
                   _c("img", {
                     attrs: {
-                      src: "/images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1409,7 +1413,7 @@ var render = function() {
                   _vm._v("Warranties "),
                   _c("img", {
                     attrs: {
-                      src: "/images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1422,7 +1426,7 @@ var render = function() {
                   _vm._v("Contact "),
                   _c("img", {
                     attrs: {
-                      src: "/images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1435,7 +1439,7 @@ var render = function() {
                   _vm._v("Search "),
                   _c("img", {
                     attrs: {
-                      src: "/images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1448,7 +1452,7 @@ var render = function() {
                   _vm._v("Login "),
                   _c("img", {
                     attrs: {
-                      src: "/images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1497,7 +1501,7 @@ var staticRenderFns = [
           staticStyle: { "pointer-events": "none" },
           attrs: {
             type: "image/svg+xml",
-            data: "/images/bertazzoni-logo.svg",
+            data: "public/images/bertazzoni-logo.svg",
             height: "14",
             width: "auto"
           }
@@ -1505,7 +1509,7 @@ var staticRenderFns = [
         [
           _c("img", {
             attrs: {
-              src: "/images/bertazzoni-logo.svg",
+              src: "public/images/bertazzoni-logo.svg",
               width: "auto",
               height: "14"
             }
@@ -1524,14 +1528,18 @@ var staticRenderFns = [
         staticStyle: { "pointer-events": "none" },
         attrs: {
           type: "image/svg+xml",
-          data: "/images/grip-lines.svg",
+          data: "public/images/grip-lines.svg",
           height: "14",
           width: "auto"
         }
       },
       [
         _c("img", {
-          attrs: { src: "images/grip-lines.svg", width: "auto", height: "14" }
+          attrs: {
+            src: "public/images/grip-lines.svg",
+            width: "auto",
+            height: "14"
+          }
         })
       ]
     )
@@ -1591,7 +1599,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "menu" }, [
-      _c("div", [_c("button", [_vm._v("\n          All products\n        ")])]),
+      _c("div", [
+        _c("button", { staticClass: "white-btn" }, [
+          _vm._v("\n          All products\n        ")
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "grid grid-cols-4 gap-8" }, [
         _c("div", [
@@ -1605,7 +1617,7 @@ var staticRenderFns = [
                   staticStyle: { "pointer-events": "none" },
                   attrs: {
                     type: "image/svg+xml",
-                    data: "/images/menu-arrow.svg",
+                    data: "public/images/menu-arrow.svg",
                     height: "10",
                     width: "auto"
                   }
@@ -1614,7 +1626,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "ml-2",
                     attrs: {
-                      src: "images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1634,7 +1646,7 @@ var staticRenderFns = [
                   staticStyle: { "pointer-events": "none" },
                   attrs: {
                     type: "image/svg+xml",
-                    data: "/images/menu-arrow.svg",
+                    data: "public/images/menu-arrow.svg",
                     height: "10",
                     width: "auto"
                   }
@@ -1643,7 +1655,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "ml-2",
                     attrs: {
-                      src: "images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1665,7 +1677,7 @@ var staticRenderFns = [
                   staticStyle: { "pointer-events": "none" },
                   attrs: {
                     type: "image/svg+xml",
-                    data: "/images/menu-arrow.svg",
+                    data: "public/images/menu-arrow.svg",
                     height: "10",
                     width: "auto"
                   }
@@ -1674,7 +1686,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "ml-2",
                     attrs: {
-                      src: "images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1694,7 +1706,7 @@ var staticRenderFns = [
                   staticStyle: { "pointer-events": "none" },
                   attrs: {
                     type: "image/svg+xml",
-                    data: "/images/menu-arrow.svg",
+                    data: "public/images/menu-arrow.svg",
                     height: "10",
                     width: "auto"
                   }
@@ -1703,7 +1715,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "ml-2",
                     attrs: {
-                      src: "images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1725,7 +1737,7 @@ var staticRenderFns = [
                   staticStyle: { "pointer-events": "none" },
                   attrs: {
                     type: "image/svg+xml",
-                    data: "/images/menu-arrow.svg",
+                    data: "public/images/menu-arrow.svg",
                     height: "10",
                     width: "auto"
                   }
@@ -1734,7 +1746,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "ml-2",
                     attrs: {
-                      src: "images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }
@@ -1756,7 +1768,7 @@ var staticRenderFns = [
                   staticStyle: { "pointer-events": "none" },
                   attrs: {
                     type: "image/svg+xml",
-                    data: "/images/menu-arrow.svg",
+                    data: "public/images/menu-arrow.svg",
                     height: "10",
                     width: "auto"
                   }
@@ -1765,7 +1777,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "ml-2",
                     attrs: {
-                      src: "images/menu-arrow.svg",
+                      src: "public/images/menu-arrow.svg",
                       width: "auto",
                       height: "10"
                     }

@@ -3,13 +3,13 @@
     <div class="border-b">
       <div class="nav container">
         <div class="brand">
-          <object type="image/svg+xml" data="/images/bertazzoni-logo.svg" height="14" width="auto" style="pointer-events: none;">
-            <img src="/images/bertazzoni-logo.svg" width="auto" height="14" />
+          <object type="image/svg+xml" data="public/images/bertazzoni-logo.svg" height="14" width="auto" style="pointer-events: none;">
+            <img src="public/images/bertazzoni-logo.svg" width="auto" height="14" />
           </object>
         </div>
         <button class="navbar-toggler" type="button" @click.stop="toggleMobileMenu">
-          <object type="image/svg+xml" data="/images/grip-lines.svg" height="14" width="auto" style="pointer-events: none;">
-            <img src="images/grip-lines.svg" width="auto" height="14">
+          <object type="image/svg+xml" data="public/images/grip-lines.svg" height="14" width="auto" style="pointer-events: none;">
+            <img src="public/images/grip-lines.svg" width="auto" height="14">
           </object>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,16 +33,16 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <img src="/images/search-icon.svg" width="auto" height="15" @click="toggleSearchForm" class="cursor-pointer" />
-            <button class="btn">LOG IN</button>
-          </form>
+          <div class="form-inline my-2 my-lg-0">
+            <img src="public/images/search-icon.svg" width="auto" height="15" @click="toggleSearchForm" class="cursor-pointer" />
+            <button class="btn white-btn">LOG IN</button>
+          </div>
           <div v-show="showingSearchForm" class="search">
             <div class="grid grid-cols-12 gap-2">
               <div class="col-span-2">
                 <button @click.stop="showCategoryDropdown" class="categories-btn">
                   {{ selectedCategory }}
-                  <img src="/images/form-dropdown-arrow.svg" width="auto" height="4" />
+                  <img src="public/images/form-dropdown-arrow.svg" width="auto" height="4" />
                 </button>
                 <div v-show="showingCategoryDropdown" v-click-outside="hideCategoryDropdown" class="category-dropdown">
                     <div class="category-list" @click="selectCategory('All Categories')">All Categories</div>
@@ -58,10 +58,10 @@
                 <input type="text" ref="searchInput" placeholder="Search keyword or product number">
               </div>
               <div class="col-span-2 flex">
-                <button class="search-btn">
+                <button class="search-btn black-btn">
                   Search
                 </button>
-                <img src="/images/close-search.svg" width="auto" height="15" class="close" @click="toggleSearchForm" />
+                <img src="public/images/close-search.svg" width="auto" height="15" class="close" @click="toggleSearchForm" />
               </div>
             </div> 
           </div>
@@ -69,21 +69,21 @@
       </div>
       <expandable>
         <div v-show="showingMobileMenu" class="nav-mobile expandable" v-click-outside="hideMobileMenu">
-          <div class="menu-row" @click.stop="toggleProductMenu"><h3>Products <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
-          <div class="menu-row"><h3>Service <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
-          <div class="menu-row"><h3>Retailers <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
-          <div class="menu-row"><h3>Our Story <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
-          <div class="menu-row"><h3>Warranties <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
-          <div class="menu-row"><h3>Contact <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
-          <div class="menu-row"><h3>Search <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
-          <div class="menu-row"><h3>Login <img src="/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row" @click.stop="toggleProductMenu"><h3>Products <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row"><h3>Service <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row"><h3>Retailers <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row"><h3>Our Story <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row"><h3>Warranties <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row"><h3>Contact <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row"><h3>Search <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
+          <div class="menu-row"><h3>Login <img src="public/images/menu-arrow.svg" width="auto" height="10" /></h3></div>
         </div>
       </expandable>
     </div>
     <div v-show="showingProductMenu" v-click-outside="hideProductMenu" class="container">
       <div class="menu">
         <div>
-          <button>
+          <button class='white-btn'>
             All products
           </button>
         </div>
@@ -91,15 +91,15 @@
           <div>
             <div class="menu-row">
               <h3>90cm Freestanding Ranges
-                <object type="image/svg+xml" data="/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
-                  <img src="images/menu-arrow.svg" width="auto" height="10" class="ml-2">
+                <object type="image/svg+xml" data="public/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
+                  <img src="public/images/menu-arrow.svg" width="auto" height="10" class="ml-2">
                 </object>
               </h3>
             </div>
             <div class="menu-row">
               <h3>Gas Hob Ranges
-                <object type="image/svg+xml" data="/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
-                  <img src="images/menu-arrow.svg" width="auto" height="10" class="ml-2">
+                <object type="image/svg+xml" data="public/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
+                  <img src="public/images/menu-arrow.svg" width="auto" height="10" class="ml-2">
                 </object>
               </h3>
             </div>
@@ -107,15 +107,15 @@
           <div>
             <div class="menu-row">
               <h3>120cm Freestanding Ranges
-                <object type="image/svg+xml" data="/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
-                  <img src="images/menu-arrow.svg" width="auto" height="10" class="ml-2">
+                <object type="image/svg+xml" data="public/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
+                  <img src="public/images/menu-arrow.svg" width="auto" height="10" class="ml-2">
                 </object>
               </h3>
             </div>
             <div class="menu-row">
               <h3>Induction Hob Ranges
-                <object type="image/svg+xml" data="/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
-                  <img src="images/menu-arrow.svg" width="auto" height="10" class="ml-2">
+                <object type="image/svg+xml" data="public/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
+                  <img src="public/images/menu-arrow.svg" width="auto" height="10" class="ml-2">
                 </object>
               </h3>
             </div>
@@ -123,8 +123,8 @@
           <div>
             <div class="menu-row">
               <h3>Double Oven Ranges
-                <object type="image/svg+xml" data="/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
-                  <img src="images/menu-arrow.svg" width="auto" height="10" class="ml-2">
+                <object type="image/svg+xml" data="public/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
+                  <img src="public/images/menu-arrow.svg" width="auto" height="10" class="ml-2">
                 </object>
               </h3>
             </div>
@@ -132,8 +132,8 @@
           <div>
             <div class="menu-row">
               <h3>Single Oven Ranges
-                <object type="image/svg+xml" data="/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
-                  <img src="images/menu-arrow.svg" width="auto" height="10" class="ml-2">
+                <object type="image/svg+xml" data="public/images/menu-arrow.svg" height="10" width="auto" style="pointer-events: none;" class="ml-2">
+                  <img src="public/images/menu-arrow.svg" width="auto" height="10" class="ml-2">
                 </object>
               </h3>
             </div>

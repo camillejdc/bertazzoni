@@ -11,14 +11,14 @@
           <expandable>
             <div v-show="show" class="expandable">
               <p>Probabo, inquit, modo dixi, constuto, ut enim ipsam pr se esse ratione neque porro quisquam est, quid aut interrogari ut placet, inquam tum dicere exorsus est laborum et negent satis esse, ut ita ruant itaque earum rerum facilis est.</p>
-              <button>Learn more</button>
+              <button class="black-btn">View ranges</button>
             </div>
           </expandable>
         </div>
         <div class="col-span-1 expandable"></div>
         <expandable>
           <div v-show="show" class="col-span-2 expandable">
-            <img src="/images/single-oven.jpg" width="100%" height="auto" />
+            <img src="public/images/single-oven.jpg" width="100%" height="auto" />
           </div>
         </expandable>
       </div>

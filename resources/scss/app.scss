@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6, p {
             padding: 15px;
             border: 1px solid white;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 11px;
             color: white;
             font-weight: 600; 
         }
@@ -579,6 +579,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 button {
     background: transparent;
+    cursor: pointer;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
@@ -589,6 +590,16 @@ button {
     position: relative;
 }
 
+.white-btn:hover, .white-btn:focus {
+    background: black !important;
+    color: white !important;
+    transition: all 250ms ease-in;
+}
+.black-btn:hover, .black-btn:focus {
+    background: white !important;
+    color: black !important;
+    transition: all 250ms ease-in;
+}
 
 .form-inline {
     display: -ms-flexbox;
