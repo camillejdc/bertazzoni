@@ -8,6 +8,8 @@ To run, simply double-click the index.html file
 3. Clicking on the search icon automatically adds focus to the search field for user convenience
 4. Clicking away from menu dropdowns automatically dismisses the dropdown
 5. Accordion gracefully expands. Click "Single Oven" to see
+6. No CSS framework used
+7. No jQuery used
 
 ## Development
 
