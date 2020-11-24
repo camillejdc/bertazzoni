@@ -1,0 +1,147 @@
+<html>
+  <head>
+    <title>Bertazzoni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/css/app.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qyg2vzc.css">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div id="app">
+      <header-menu></header-menu>
+      <div class="hero">
+        <div class="flex content-center">
+          <div class="visible-xs">
+            <img src="/images/hero.jpg" width="100%" height="auto" />
+        </div>
+          <div class="flex-1 ">
+            <div class="caption">
+              <div>
+                <h1>Laudem Et Voluptat Repudianda</h1>
+                <p>Bertazzoni <br>
+                Professional Series</p>
+                <button>View range</button>
+              </div>
+              <div class="carousel-button">
+                <ol class="circles">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 hidden-xs">
+              <img src="/images/hero.jpg" width="100%" height="auto" />
+          </div>
+        </div>
+      </div>
+      <div class="machines">
+        <div class="container">
+          <div class="grid grid-cols-3 gap-12">
+            <div class="col">
+              <div class="">
+                <hr>
+                <p>Probabo, Inquit, Modo dixi, constuto, ut et dolorem ipsum autem vel illum, qui in gravitissimo bello animadversionis</p>
+                <div class="oven">
+                  <img src="images/bertazzoni-logo-round.png" alt="" width="130" class="overlay-image">
+                  <img src="images/beautiful-machines.jpg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 beautiful-machines">
+              <h1>Beautiful <br>  Machines</h1>
+              <h2>At Vero eos censes aut fugiat aliquid, praeter voluptatem ipsam.</h2>
+              <button>Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="/images/our-story.jpg" width="100%" height="auto" />
+      </div>
+      <div class="at-vero">
+        <div class="container">
+          <h2>At Vero eos censes aut fugiat aliquid</h2>
+          <button>Learn more</button>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="container">
+          <p>Browse by ranges</p>
+          <div class="range-list">
+            <div class="range-row">
+              <h3>90cm Freestanding</h3>
+            </div>
+            <div class="range-row">
+              <h3>120cm Freestanding</h3>
+            </div>
+            <div class="range-row">
+              <h3>Double Oven</h3>
+            </div>
+            <accordion class="range-row open">
+              <!-- <template v-slot="{ toggle }">
+                <div class="grid grid-cols-8 gap-8">
+                  <div class="col-span-5 content">
+                    <h3 @click="toggle">Single Oven</h3>
+                    <p>Probabo, inquit, modo dixi, constuto, ut enim ipsam pr se esse ratione neque porro quisquam est, quid aut interrogari ut placet, inquam tum dicere exorsus est laborum et negent satis esse, ut ita ruant itaque earum rerum facilis est.</p>
+                    <button>Learn more</button>
+                  </div>
+                  <div class="col-span-1"></div>
+                  <div class="col-span-2">
+                    <img src="/images/single-oven.jpg" width="100%" height="auto" />
+                  </div>
+                </div>
+              </template> -->
+            </accordion>
+            <div class="range-row">
+              <h3>Gas Hob</h3>
+            </div>
+            <div class="range-row">
+              <h3>Induction Hob</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="flex justify-between">
+            <div class="flex-initial">
+              <div class="grid grid-cols-2 gap-32">
+                <div class="col-span-1">
+                  <a href="#">Products</a>
+                  <a href="#">Service</a>
+                  <a href="#">Retailers</a>
+                </div>
+                <div class="col-span-1">
+                  <a href="#">Our story</a>
+                  <a href="#">warranties</a>
+                  <a href="#">contact</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex-initial justify-self-end">
+              <div>
+                <object type="image/svg+xml" data="/images/bertazzoni-logo-white.svg" height="14" width="auto" style="pointer-events: none; display: block" class="ml-auto">
+                  <img src="/images/bertazzoni-logo.svg" width="auto" height="14" />
+                </object>
+              </div>
+              <div class="form">
+                <input type="text" placeholder="Enter email">
+                <button>Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <p>Bertazzoni 2020 All rights reserved.</p>
+            <p>Web design by Brownpaperbag</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="/public/js/app.js"></script>
+  </body>
+</html>
